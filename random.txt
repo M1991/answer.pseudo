@@ -17,9 +17,8 @@ void funct(char *str, int ranm)
 
 int main ()                     //Main function
 {
-    char *str;          //Declaring pointer variable
+    char str[9];          //Declaring pointer variable
     int ranm;       
-    str = (char *) malloc ( 1024 + 1 ); //Memory allocation for str
     strcpy(str,"Ravi");  //Copies string Ravi to str var
     srand( time(0));  //A randomized number by help of time.
 	

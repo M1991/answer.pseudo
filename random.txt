@@ -1,0 +1,32 @@
+#include <iostream> //Needed for Input /Output stream
+#include <ctime>   //Needed for the true randomization
+#include <cstdlib>  // c standard library file for process, exit, memory management
+#include <string.h> //Needed for all string operations, strcpy, strcat,strcmp
+using namespace std;  
+void funct(char *str, int ranm);
+
+void funct(char *str, int ranm)
+{
+  
+  //  cout<<endl<<"The requried Output is: "<<str<<ranm;
+      return;
+}
+
+
+
+
+int main ()                     //Main function
+{
+    char *str;          //Declaring pointer variable
+    int ranm;       
+    str = (char *) malloc ( 1024 + 1 ); //Memory allocation for str
+    strcpy(str,"Ravi");  //Copies string Ravi to str var
+    srand( time(0));  //A randomized number by help of time.
+	
+	ranm=rand()%15+1;  //Randomizing the number between 1-15.
+	cout<<"Random number between 1-15 : "<<ranm;	
+	cout<<endl<<"Name assigned: "<<str;
+	funct(str,ranm);   //Function call
+    cout<<endl<<str<<ranm;
+	return 0;
+}

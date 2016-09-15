@@ -22,7 +22,7 @@ int main ()                     //Main function
     strcpy(str,"Ravi");  //Copies string Ravi to str var
     srand( time(0));  //A randomized number by help of time.
 	
-	ranm=rand()%15+6;  //Randomizing the number between 6-15.
+	ranm=6+ rand()%10;  //Randomizing the number between 6-15.
 	cout<<"Random number between 6-15 : "<<ranm;	
 	cout<<endl<<"Name assigned: "<<str;
 	funct(str,ranm);   //Function call

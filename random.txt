@@ -12,9 +12,6 @@ void funct(char *str, int ranm)
       return;
 }
 
-
-
-
 int main ()                     //Main function
 {
     char str[9];          //Declaring pointer variable
